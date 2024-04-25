@@ -63,10 +63,12 @@ body {
   display: grid;
   margin-top: 3rem;
   font-weight: bold;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.25rem;
 
   text-align: center;
+
+  margin: 3.125rem;
 }
 
 .movie-card {
