@@ -1,0 +1,97 @@
+body {
+  background-image: url(./cinema.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+* {
+  font-family: 'Diphylleia', serif;
+  font-weight: 400;
+  font-style: normal;
+  user-select: none;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1.25rem;
+
+  color: hsl(293, 100%, 73%);
+
+  background-color: hsla(0, 0%, 0%, 0.747);
+
+  height: 6.25rem;
+}
+
+#search-form {
+  margin-top: 1.25rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 3.75rem;
+
+  font-size: 800;
+  font-weight: bold;
+
+  background-color: rgba(75, 75, 75, 0.767);
+}
+
+#search-movie {
+  margin-right: 0.625rem;
+  font-weight: 900;
+  font-size: larger;
+  color: rgb(255, 66, 123);
+  border-radius: 0.625rem;
+}
+
+#input-text {
+  background-color: rgba(0, 0, 0, 0.719);
+  font-style: italic;
+}
+
+#search-btn {
+  margin-left: 0.625rem;
+  border-radius: 0.0625rem;
+  text-align: center;
+}
+
+.movie-list {
+  display: grid;
+  margin-top: 3rem;
+  font-weight: bold;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.25rem;
+
+  text-align: center;
+}
+
+.movie-card {
+  background-color: rgba(0, 0, 0, 0.575);
+  border-radius: 0.1875rem;
+}
+
+.movie-title {
+  margin-top: 0.625rem;
+}
+
+.movie-overview {
+  margin-top: 0.625rem;
+  word-break: keep-all;
+}
+
+img {
+  width: 12.5rem;
+  height: 18.75rem;
+}
+
+.movie-card:hover {
+  cursor: pointer;
+}
+
+.title:hover {
+  cursor: pointer;
+}
