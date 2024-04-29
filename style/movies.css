@@ -1,11 +1,11 @@
 body {
-  background-image: url(./cinema.jpg);
+  background-image: url(../assets/cinema.jpg);
   background-position: center;
   background-size: cover;
 }
 
 * {
-  font-family: 'Diphylleia', serif;
+  font-family: "Diphylleia", serif;
   font-weight: 400;
   font-style: normal;
   user-select: none;
