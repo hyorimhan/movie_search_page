@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Diphylleia&family=Grandiflora+One&display=swap");
+
 body {
-  background-image: url(./cinema.jpg);
+  background-image: url(../assets/cinema.jpg);
   background-position: center;
   background-size: cover;
 }
