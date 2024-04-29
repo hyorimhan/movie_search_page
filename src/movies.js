@@ -26,7 +26,6 @@ fetch(url)
       .join(''); //각 영화 카드 담은 html 생성
     document.querySelector('.movie-list').innerHTML = card_list;
 
-
     document
       .querySelector('#search-btn')
       .addEventListener('click', function (event) {
@@ -47,3 +46,5 @@ fetch(url)
     }
   })
   .catch((err) => console.log(err));
+
+
