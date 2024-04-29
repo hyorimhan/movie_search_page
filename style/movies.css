@@ -92,7 +92,7 @@ img {
   height: 18.75rem;
 }
 
-.movie-card:hover {
+img:hover {
   cursor: pointer;
 }
 

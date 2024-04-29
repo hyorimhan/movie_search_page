@@ -17,8 +17,8 @@ fetch(url)
         const movieImg = `https://image.tmdb.org/t/p/original${a['poster_path']}`;
         const movieId = a['id'];
 
-        return `<div class="movie-card" onclick="alert(${movieId})"> 
-      <img src="${movieImg}" alt="poster" />
+        return `<div class="movie-card"> 
+      <img src="${movieImg}" alt="poster" onclick="alert(${movieId})"/>
       <h2 class="movie-title">${movieTitle}</h2>
       <p class="movie-overview">${movieOverview}</p>
       <p class="movie-vote">⭐️${movieVote}</p>
