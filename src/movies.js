@@ -1,3 +1,4 @@
+
 const movieAPI = config.apikey;
 const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${movieAPI}&language=en-US&page=3`;
 
@@ -26,17 +27,17 @@ fetch(url)
       .join(''); //각 영화 카드 담은 html 생성
     document.querySelector('.movie-list').innerHTML = card_list;
 
-    document
+    document //버튼 클릭시 검색 기능
       .querySelector('#search-btn')
       .addEventListener('click', function (event) {
         event.preventDefault();
-        showResult();
+        let inputValue = document
+          .querySelector('#input-text')
+          .value.toLowerCase();
+        inputValue.trim() === '' ? alert('검색어를 입력해주세요') : showResult(inputValue);
       });
 
-    function showResult() {
-      let inputValue = document
-        .querySelector('#input-text')
-        .value.toLowerCase(); //소문자로 변환
+    function showResult(inputValue) {
       let cards = document.querySelectorAll('.movie-card'); // 모든 영화 카드 선택
 
       cards.forEach((a) => {
@@ -46,5 +47,3 @@ fetch(url)
     }
   })
   .catch((err) => console.log(err));
-
-
