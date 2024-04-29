@@ -14,28 +14,30 @@
     />
   </head>
   <body>
-    <div class="title" onclick="location.href='movies.html'">
-      <h1>내배캠 최고 영화 콜렉션</h1>
-    </div>
-
-    <form id="search-form">
-      <div>
-        <label id="search-movie">영화 검색</label>
-        <input type="text" id="input-text" placeholder="영화 제목을 검색하세요" autofocus />
+    <header>
+      <div class="title" onclick="location.href='movies.html'">
+        <h1>내배캠 최고 영화 콜렉션</h1>
       </div>
-      <div>
-        <button type="submit" id="search-btn" autofocus>검색</button>
-      </div>
-    </form>
 
-    <section class="movie-list">
+      <form id="search-form">
+        <div>
+          <label id="search-movie">영화 검색</label>
+          <input type="text" id="input-text" placeholder="영화 제목을 검색하세요" autofocus />
+        </div>
+        <div>
+          <button type="submit" id="search-btn" autofocus>검색</button>
+        </div>
+      </form>
+    </header>
+
+    <main class="movie-list">
       <div class="movie-card" onclick="">
         <img src="" alt="poster" />
         <h2 class="movie-title"></h2>
         <p class="movie-overview"></p>
         <p class="movie-vote"></p>
       </div>
-    </section>
+    </main>
 
     <script src="./src/apikey.js"></script>
     <script src="./src/movies.js"></script>

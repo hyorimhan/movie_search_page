@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Diphylleia&family=Grandiflora+One&display=swap");
 
-body {
-  background-image: url(../assets/cinema.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
 * {
   font-family: "Diphylleia", serif;
   font-weight: 400;
   font-style: normal;
   user-select: none;
+}
+
+body {
+  background-image: url(../assets/cinema.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
@@ -20,9 +20,9 @@ body {
 
   margin-top: 1.25rem;
 
-  color: hsl(293, 100%, 73%);
+  color: #ef75ff;
 
-  background-color: hsla(0, 0%, 0%, 0.747);
+  background-color: #000000be;
 
   height: 6.25rem;
 }
@@ -39,19 +39,19 @@ body {
   font-size: 800;
   font-weight: bold;
 
-  background-color: rgba(75, 75, 75, 0.767);
+  background-color: #4b4b4bc4;
 }
 
 #search-movie {
   margin-right: 0.625rem;
   font-weight: 900;
   font-size: larger;
-  color: rgb(255, 66, 123);
+  color: #ff427b;
   border-radius: 0.625rem;
 }
 
 #input-text {
-  background-color: rgba(0, 0, 0, 0.719);
+  background-color: #000000b7;
   font-style: italic;
 }
 
@@ -74,7 +74,7 @@ body {
 }
 
 .movie-card {
-  background-color: rgba(0, 0, 0, 0.575);
+  background-color: #00000093;
   border-radius: 0.1875rem;
 }
 
