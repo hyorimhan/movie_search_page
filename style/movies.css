@@ -1,5 +1,5 @@
 body {
-  background-image: url(../assets/cinema.jpg);
+  background-image: url(./cinema.jpg);
   background-position: center;
   background-size: cover;
 }
