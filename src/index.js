@@ -1,5 +1,5 @@
 
-const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=0e04883edac9f9f0defff470a3a5ecf4&language=en-US&page=3`;
+const url = `https://api.themoviedb.org/3/tv/top_rated?api_key=fa3f544c347818713812ca988196d68d&language=en-US&page=1`;
 
 fetch(url)
   .then((response) => response.json())
@@ -10,7 +10,7 @@ fetch(url)
 
     let card_list = movie
       .map((a) => {
-        const movieTitle = a['original_title'].toLowerCase();
+        const movieTitle = a['original_name'].toLowerCase();
         const movieOverview = a['overview'];
         const movieVote = a['vote_average'].toFixed(2);
         const movieImg = `https://image.tmdb.org/t/p/original${a['poster_path']}`;
