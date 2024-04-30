@@ -24,7 +24,8 @@ fetch(url)
     document.querySelector('#search-btn').addEventListener('click', e => {
       e.preventDefault();
       const inputValue = document.querySelector('#input-text').value.toLowerCase(); // 검색 버튼 클릭시 검색어 소문자로 변환해 가져오기
-      inputValue.trim() === '' ? alert('검색어를 입력해주세요') : showResult(inputValue); // 검색어가 없으면 alert 띄우고 있으면 showResult 함수 실행
+      inputValue.trim() === '' || 'undefined' ? 
+        alert('검색어가 입력되지 않았거나 결과값이 없습니다') : showResult(inputValue); // 검색어가 없으면 alert, 있으면 showResult 함수 실행
     });
 
     function showResult(inputValue) {
