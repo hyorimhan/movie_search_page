@@ -20,45 +20,47 @@ body {
 
   margin-top: 1.25rem;
 
-  color: #ef75ff;
+  color: #e51dff;
 
-  background-color: #000000be;
+  font-weight: bold;
+  font-size: 180%;
+
+  background-color: #000000d7;
 
   height: 6.25rem;
 }
 
 #search-form {
-  margin-top: 1.25rem;
+  /* margin-top: 1.25rem; */
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  height: 3.75rem;
-
-  font-size: 800;
-  font-weight: bold;
-
-  background-color: #4b4b4bc4;
-}
-
-#search-movie {
-  margin-right: 0.625rem;
-  font-weight: 900;
-  font-size: larger;
-  color: #ff427b;
-  border-radius: 0.625rem;
+  height: 5rem;
+  background-color: #000000d7;
 }
 
 #input-text {
-  background-color: #000000b7;
+  background-color: #ffffff;
   font-style: italic;
+  height: 150%;
+  height: 25px;
+  width: 15.625rem;
+
+  font-size: 120%;
 }
 
 #search-btn {
   margin-left: 0.625rem;
-  border-radius: 0.0625rem;
+  border-radius: 0.0313rem;
   text-align: center;
+  height: 2.5rem;
+  width: 4.375rem;
+
+  background-color: #e51dff;
+
+  font-size: 120%;
 }
 
 .movie-list {
@@ -74,17 +76,24 @@ body {
 }
 
 .movie-card {
-  background-color: #00000093;
+  background-color: #000000da;
   border-radius: 0.1875rem;
 }
 
 .movie-title {
   margin-top: 0.625rem;
+  font-size: 180%;
 }
 
 .movie-overview {
   margin-top: 0.625rem;
-  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+
+  font-size: 120%;
 }
 
 img {
