@@ -1,5 +1,5 @@
 
-const url = `https://api.themoviedb.org/3/tv/top_rated?api_key=fa3f544c347818713812ca988196d68d&language=en-US&page=1`;
+const url = `https://api.themoviedb.org/3/tv/top_rated?language=en-US&page=1`;
 
 fetch(url)
   .then((response) => response.json())
